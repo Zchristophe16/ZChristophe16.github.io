@@ -87,7 +87,7 @@
 				}
 				else if (positionX <0) {
 					// change the speed to positive 
-					speed = speed *1 
+					speed = speed *-1 
 				}
 
 
@@ -101,9 +101,9 @@
 			function handleBoxClick() {
 				positionX =0;
 				points = points +1;
-				changeBoxTexte(point);
+				changeBoxText(points);
 				//Reassigning the positionX variable to 
-				if(seep > 0) {
+				if(speed > 0) {
 					//add 3 to speed 
 					speed = speed +3;
 				}
